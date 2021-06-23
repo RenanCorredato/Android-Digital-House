@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         Log.i("lifecycle", "onCreate")
 
       //  findViewById<Button>(R.id.helloword).setOnClickListener {
-     //   startActivity(Intent(this@MainActivity, SplashActivity::class.java)) ação do botão para ir para outra tela
+     //   startActivity(Intent(this@MainActivity, SplashActivity::class.java)) Click do botão  ir para outra tela
      //   }
 
         findViewById<Button>(R.id.helloword).setOnClickListener {
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         const val KEY_INTENTE_SALDO = "saldo"
 
         fun printarValor(){
-            Log.i("print", "acessei meu metodo estático")
+            Log.i("print", "método estático")
         }
 
     }

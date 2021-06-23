@@ -14,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
         val nome = intent.getStringExtra(KEY_INTENTE_NOME)
         val saldo = intent.getDoubleExtra(KEY_INTENTE_SALDO,0.0)
 
-        Log.i("resultIntent", "Meu nome: $nome" +
+        Log.i("resultIntent", "Meu nome é - $nome" +
         " ,meu saldo é $saldo")
 
         MainActivity.printarValor()

@@ -15,19 +15,19 @@ class MainActivity : AppCompatActivity() {
 
         Log.i("lifecycle", "onCreate")
 
-      //  findViewById<Button>(R.id.helloword).setOnClickListener {
-     //   startActivity(Intent(this@MainActivity, SplashActivity::class.java)) Click do botão  ir para outra tela
-     //   }
+//       findViewById<Button>(R.id.helloword).setOnClickListener {
+//        startActivity(Intent(this@MainActivity, SplashActivity::class.java)) Click do botão  ir para outra tela
+//        }
 
-        findViewById<Button>(R.id.helloword).setOnClickListener {
-         val intent = Intent(this@MainActivity, SplashActivity::class.java) // pasando uma informação para outra tela Splash
-            intent.putExtra(KEY_INTENTE_NOME,"Renan Corredato" )
-            intent.putExtra(KEY_INTENTE_SALDO, 50.0)
-            startActivity(intent)
-
-            // MainActivity -> pacote(Intent) -> SplashActivity
-        }
-    }
+//        findViewById<Button>(R.id.helloword).setOnClickListener {
+//         val intent = Intent(this@MainActivity, SplashActivity::class.java)
+//            intent.putExtra(KEY_INTENTE_NOME,"Renan Corredato" )// pasando uma informação para outra tela Splash
+//            intent.putExtra(KEY_INTENTE_SALDO, 50.0)
+//            startActivity(intent)
+//
+//            // MainActivity -> pacote(Intent) -> SplashActivity
+//        }
+   }
 
     override fun onStart() {
         super.onStart()
@@ -67,5 +67,4 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
 }

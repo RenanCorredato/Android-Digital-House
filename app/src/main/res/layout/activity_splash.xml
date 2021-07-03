@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:background="@drawable/ic_launcher_foreground">
 
+<<<<<<< HEAD
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -18,4 +20,6 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph" />
 
+=======
+>>>>>>> 3aa45c57ff24d3b11681748a51e63cbb265b7fa0
 </androidx.constraintlayout.widget.ConstraintLayout>

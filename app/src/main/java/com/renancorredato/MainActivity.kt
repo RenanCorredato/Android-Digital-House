@@ -7,27 +7,32 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
 import android.widget.Button
+import com.renancorredato.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         Log.i("lifecycle", "onCreate")
 
-      //  findViewById<Button>(R.id.helloword).setOnClickListener {
-     //   startActivity(Intent(this@MainActivity, SplashActivity::class.java)) Click do botão  ir para outra tela
-     //   }
+//       findViewById<Button>(R.id.helloword).setOnClickListener {
+//        startActivity(Intent(this@MainActivity, SplashActivity::class.java)) Click do botão  ir para outra tela
+//        }
 
-        findViewById<Button>(R.id.helloword).setOnClickListener {
-         val intent = Intent(this@MainActivity, SplashActivity::class.java) // pasando uma informação para outra tela Splash
-            intent.putExtra(KEY_INTENTE_NOME,"Renan Corredato" )
-            intent.putExtra(KEY_INTENTE_SALDO, 50.0)
-            startActivity(intent)
-
-            // MainActivity -> pacote(Intent) -> SplashActivity
-        }
-    }
+//        findViewById<Button>(R.id.helloword).setOnClickListener {
+//         val intent = Intent(this@MainActivity, SplashActivity::class.java) // pasando uma informação para outra tela Splash
+//            intent.putExtra(KEY_INTENTE_NOME,"Renan Corredato" )
+//            intent.putExtra(KEY_INTENTE_SALDO, 50.0)
+//            startActivity(intent)
+//
+//            // MainActivity -> pacote(Intent) -> SplashActivity
+//        }
+   }
 
     override fun onStart() {
         super.onStart()
@@ -67,5 +72,4 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
 }

@@ -23,15 +23,11 @@ class MainActivity : AppCompatActivity() {
 //       findViewById<Button>(R.id.helloword).setOnClickListener {
 //        startActivity(Intent(this@MainActivity, SplashActivity::class.java)) Click do botão  ir para outra tela
 //        }
-
 //        findViewById<Button>(R.id.helloword).setOnClickListener {
-<<<<<<< HEAD
 //         val intent = Intent(this@MainActivity, SplashActivity::class.java) // pasando uma informação para outra tela Splash
 //            intent.putExtra(KEY_INTENTE_NOME,"Renan Corredato" )
-=======
 //         val intent = Intent(this@MainActivity, SplashActivity::class.java)
 //            intent.putExtra(KEY_INTENTE_NOME,"Renan Corredato" )// pasando uma informação para outra tela Splash
->>>>>>> 3aa45c57ff24d3b11681748a51e63cbb265b7fa0
 //            intent.putExtra(KEY_INTENTE_SALDO, 50.0)
 //            startActivity(intent)
 //

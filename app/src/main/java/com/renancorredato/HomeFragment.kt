@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.renancorredato.databinding.FragmentHomeBinding
 
@@ -25,11 +26,17 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding?.btSplashAMovies?.text = "Alterei via framents"
+
         binding?.btSplashAbout?.setOnClickListener {
             val bundle = Bundle()
             bundle.putString("Teste","Teste")
             bundle.putInt("Teste", 2)
             findNavController().navigate(R.id.action_homeFragment_to_aboutFragment,bundle)
+        }
+
+        binding?.tvHomeClickHere?.setOnClickListener {
+            Toast.makeText(context,"Você clicou no botão",Toast.LENGTH_SHORT).show()
         }
 
         binding?.btSplashAMovies?.setOnClickListener {
@@ -38,8 +45,6 @@ class HomeFragment : Fragment() {
         }
 
     }
-
-
 
     override fun onDestroy() {
         super.onDestroy()

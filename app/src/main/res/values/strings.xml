@@ -14,4 +14,8 @@
     <string name="meu_home">home</string>
     <string name="menu_movies">movies</string>
     <string name="menu_about">about</string>
+    <string name="payments">Payments</string>
+    <string name="text_label_1">Tab 1</string>
+    <string name="text_label_2">Tab 2</string>
+    <string name="text_label_3">Tab 3</string>
 </resources>

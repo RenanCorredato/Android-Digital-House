@@ -34,5 +34,4 @@ class AboutFragment : Fragment() {
         super.onDestroy()
         binding = null
     }
-
 }
